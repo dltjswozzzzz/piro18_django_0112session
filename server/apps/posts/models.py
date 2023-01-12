@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 
 class Post(models.Model):
-    title = models.CharField(max_length=32)
-    user - models.CharField(max_length=32)
+    title = models.CharField(max_length=64)
+    user = models.CharField(max_length=32)
     content = models.TextField()
     region = models.CharField(max_length=16)
     price = models.IntegerField()
